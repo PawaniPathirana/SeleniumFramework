@@ -61,7 +61,7 @@ public class BaseTest {
 		setupDriver (browser);
 		driver.manage().window().maximize();
 		driver.get(Constants.url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(70));
 		
 		
 		

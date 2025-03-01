@@ -16,8 +16,8 @@ LoginPageEvents loginPage = new LoginPageEvents();
   @Test
   public void sampleMethodForEnteringCredentials() {
 	  
-	  homePage.signInButton();
-	  loginPage.verifyIfLoginPageIsLoaded();
+	  //homePage.signInButton();
+	loginPage.verifyIfLoginPageIsLoaded();
 	  loginPage.enterCredentials();
 	  
   }
