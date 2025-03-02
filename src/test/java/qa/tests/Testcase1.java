@@ -26,14 +26,17 @@ public void verifyIfLoginPageIsLoaded() {
 
 
   @Test
-  public void MethodForEnteringCredentials() {
+  public void verifyValidLgin() {
 	  
 	  
 	
-	  loginPage.performLogin();
+	  loginPage.performLogin("standard_user","secret_sauce");
 	  
-	  
-	//  Assert.assertTrue(performLogin, "Login failed!");
+	  String currentURL = driver.getCurrentUrl();
+      System.out.println("Current URL: " + currentURL);
+
+      // Assertion to verify the URL
+      Assert.assertEquals(currentURL, "https://www.saucedemo.com/inventory.html", "Login Failed");
 	  
   }
 }

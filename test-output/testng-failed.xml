@@ -5,11 +5,11 @@
     <classes>
       <class name="qa.tests.Testcase1">
         <methods>
-          <include name="beforeTestMethod"/>
           <include name="afterMethod"/>
+          <include name="beforeTestMethod"/>
           <include name="beforeMethodMethod"/>
           <include name="afterTest"/>
-          <include name="sampleMethodForEnteringCredentials"/>
+          <include name="MethodForEnteringCredentials"/>
         </methods>
       </class> <!-- qa.tests.Testcase1 -->
     </classes>

@@ -16,11 +16,11 @@ public class LoginPageEvents {
 		
 	
 	
-	public void performLogin() {
+	public void performLogin(String userName, String password) {
 		
 		
-		ele.getWebElement("XPATH",LoginPageElements.emailAddress).sendKeys("yfddtd");
-		ele.getWebElement("XPATH",LoginPageElements.passwordField).sendKeys("123234");
+		ele.getWebElement("XPATH",LoginPageElements.userName).sendKeys(userName);
+		ele.getWebElement("XPATH",LoginPageElements.passwordField).sendKeys(password);
 		ele.getWebElement("XPATH",LoginPageElements.loginBtn).click();
 		
 	
