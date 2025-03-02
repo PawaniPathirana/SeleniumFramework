@@ -1,5 +1,6 @@
 package qa.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -13,12 +14,26 @@ ElementFetch ele = new ElementFetch();
 HomePageEvents homePage = new HomePageEvents();
 LoginPageEvents loginPage = new LoginPageEvents();
 
-  @Test
-  public void sampleMethodForEnteringCredentials() {
+
+@Test
+public void verifyIfLoginPageIsLoaded() {
 	  
-	  //homePage.signInButton();
+	  
 	loginPage.verifyIfLoginPageIsLoaded();
-	  loginPage.enterCredentials();
+	Assert.assertTrue(loginPage.verifyIfLoginPageIsLoaded(), "Login page did not load properly!");
+  }
+
+
+
+  @Test
+  public void MethodForEnteringCredentials() {
+	  
+	  
+	
+	  loginPage.performLogin();
+	  
+	  
+	//  Assert.assertTrue(performLogin, "Login failed!");
 	  
   }
 }
